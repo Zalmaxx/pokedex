@@ -15,4 +15,4 @@ patches:
   - path: patch-deployment.yaml
     target:
       kind: Deployment
-      name: guestbook-ui
+      name: pokedex-ui
