@@ -8,7 +8,7 @@ namespace: dev
 
 images:
   - name: pokedex:1.0.0
-    newTag: "1.0.0"
+    newTag: "1.0.1"
 
 # Références au fichier de patch
 patches:
