@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pokedex
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: pokedex
+  template:
+    metadata:
+      labels:
+        app: pokedex
+    spec:
+      containers:
+        - image: pokedex:1.0.0
+          name: pokedex
+          ports:
+            - containerPort: 3000

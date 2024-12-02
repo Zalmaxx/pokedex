@@ -1,0 +1,9 @@
+- op: add
+  path: "/spec/template/spec/containers/0/env"
+  value:
+    - name: POKEDEX_NAME
+      value: "Pokedex-dev"
+    - name: POKEDEX_START_NUMBER
+      value: "0"
+    - name: POKEDEX_END_NUMBER
+      value: "100"
