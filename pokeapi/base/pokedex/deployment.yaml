@@ -18,7 +18,3 @@ spec:
           name: pokedex
           ports:
             - containerPort: 3000
-        - image: nginx:latest
-          name: nginx
-          ports:
-            - containerPort: 80
