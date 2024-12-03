@@ -3,4 +3,4 @@ kind: Deployment
 metadata:
     name: permet-dindiquer-le-nombre-minimum-de-replicas-par-exemple
 spec:
-  replicas: 2
+  replicas: 5
