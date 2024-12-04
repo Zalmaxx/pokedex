@@ -11,3 +11,7 @@ patches:
 - path: patch-deployment.yaml
   target:
     kind: Deployment
+images:
+- name: pokedex
+  newName: ghcr.io/zalmaxx/pokedex
+  newTag: sha-c3cc788

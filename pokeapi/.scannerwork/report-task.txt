@@ -2,5 +2,5 @@ projectKey=Pokeapi-max
 serverUrl=http://20.19.196.77:9000
 serverVersion=24.12.0.100206
 dashboardUrl=http://20.19.196.77:9000/dashboard?id=Pokeapi-max
-ceTaskId=3c437dee-d907-4740-8b02-5555eb21f2ee
-ceTaskUrl=http://20.19.196.77:9000/api/ce/task?id=3c437dee-d907-4740-8b02-5555eb21f2ee
+ceTaskId=63e8296a-fbe1-4b8f-bebd-a574282d149d
+ceTaskUrl=http://20.19.196.77:9000/api/ce/task?id=63e8296a-fbe1-4b8f-bebd-a574282d149d
