@@ -122,10 +122,10 @@ jobs:
         uses: syntaqx/setup-kustomize@v1
 
       - name: Edit manifest for Johto
-        run: cd overlays/dev && kustomize edit set image ghcr.io/zalmaxx/pokedex:1.0.0=${{ steps.output_variables.outputs.image_tag }}
+        run: cd pokeapi/overlays/dev && kustomize edit set image ghcr.io/zalmaxx/pokedex:1.0.0=${{ steps.output_variables.outputs.image_tag }}
 
       - name: Edit manifest for Kanto
-        run: cd overlays/prod && kustomize edit set image ghcr.io/zalmaxx/pokedex:1.0.0=${{ steps.output_variables.outputs.image_tag }}
+        run: cd pokeapi/overlays/prod && kustomize edit set image ghcr.io/zalmaxx/pokedex:1.0.0=${{ steps.output_variables.outputs.image_tag }}
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
