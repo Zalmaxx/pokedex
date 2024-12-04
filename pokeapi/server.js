@@ -13,7 +13,7 @@ fastify.register(fastifySensible);
 fastify.get('/', (request, reply) => {
     reply
         .type('text/html')
-        .send(`<h1>Salut grosse pute de merde le bosss ${process.env.POKEDEX_NAME} Pok&eacute;dex API!</h1>`);
+        .send(`<h1>Salut grosse pute de merde le bossss ${process.env.POKEDEX_NAME} Pok&eacute;dex API!</h1>`);
 });
 
 fastify.register(pokemons);
