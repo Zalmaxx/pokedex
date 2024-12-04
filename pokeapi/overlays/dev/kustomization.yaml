@@ -2,16 +2,19 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - ../../base
+- ../../base
 
 namespace: dev
 
 images:
-  - name: pokedex:1.0.0
-    newTag: "1.0.1"
+- name: ghcr.io/zalmaxx/pokedex:1.0.0
+  newName: ghcr.io/zalmaxx/pokedex
+  newTag: sha-e59c213
+- name: pokedex:1.0.0
+  newTag: 1.0.1
 
 # Références au fichier de patch
 patches:
-  - path: patch-deployment.yaml
-    target:
-      kind: Deployment
+- path: patch-deployment.yaml
+  target:
+    kind: Deployment
