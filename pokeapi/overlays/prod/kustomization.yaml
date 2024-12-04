@@ -6,13 +6,6 @@ resources:
 
 namespace: prod
 
-images:
-- name: ghcr.io/zalmaxx/pokedex:1.0.0
-  newName: ghcr.io/zalmaxx/pokedex
-  newTag: sha-e59c213
-- name: pokedex:1.0.0
-  newTag: 1.0.0
-
 patches:
 - path: minimum-replicas.yaml
   target:
