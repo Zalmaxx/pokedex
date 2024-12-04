@@ -71,4 +71,5 @@ jobs:
           SONAR_HOST_URL: ${{ vars.SONAR_URL }}
         with:
           projectBaseDir: pokeapi
+          args: '-Dsonar.projectKey=Pokeapi-max'
           
